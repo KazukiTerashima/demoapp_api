@@ -36,7 +36,3 @@ RUN apk update && \
     apk del build-dependencies
 
 COPY . ./
-
-# コンテナ内で実行するコマンドの定義
-# -b: バインド。コンテナ使用時は外部ブラウザから参照するためにipアドレスに紐つける必要あり
-CMD ["rails", "server", "-b", "0.0.0.0"]
