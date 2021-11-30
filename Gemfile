@@ -25,6 +25,15 @@ gem 'bootsnap', '>= 1.4.2', require: false
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 gem 'rack-cors'
 
+# コンソールの出力結果を見やすくする
+gem 'hirb', '~> 0.7.3'
+
+# hirbの文字列補正
+gem 'hirb-unicode-steakknife', '~> 0.0.9'
+
+# パスワード暗号化
+gem 'bcrypt', '~> 3.1', '>= 3.1.16'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
