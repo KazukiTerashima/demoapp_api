@@ -10,7 +10,7 @@ class User < ApplicationRecord
 
   validates :name, presence: true,
                    length: {
-                     maximum: 50,
+                     maximum: 30,
                      allow_blank: true
                    }
   validates :email, presence: true,
@@ -25,7 +25,7 @@ class User < ApplicationRecord
                         },
                        format: {
                          with: VALID_PASSWORD_REGEX,
-                         message: :invalid_message,
+                         message: :invalid_password,
                          allow_blank: true
                        },
                        allow_nil: true
